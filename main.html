@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Variante Informatica</title>
+	<style type="text/css">
+		@font-face{
+		font-family: Montserrat; src: url("montserrat.ttf");
+		}
+		*{
+			text-decoration: none;
+			font-family: Montserrat;
+		}
+		}
+		body{
+			background-color: white;
+		}
+		#diplo_img{
+		margin-right: 500px;
+		}
+		.navbar{
+			background: #C24641; font-family: calibri; padding-right: 15px;padding-left: 15px;
+			
+		}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
+		.logo a{
+			font-size: 40px; font-weight: 600; color: white;
+		}
+		#elem2{
+			list-style: none; display: inline-block; color: white; font-size: 25px; font-weight: bold; margin-right: 25px;
+		}
+		#elem1{
+			list-style: none; display: inline-block; color: white; font-size: 25px; font-weight: bold; margin-right: 25px;
+		}
+		#elem3{
+			list-style: none; display: inline-block; color: white; font-size: 25px; font-weight: bold; margin-right: 25px;
+		}
+		li a{
+		color: white; font-size: 25px; font-weight: bold;
+		}
+		button{
+			transition-duration: 0.2s;
+			background-color: #C24641; margin-left: 10px; border-radius: 12px; padding: 10px; width: 90px;
+			color:white;
+		
+		}
+		
+		button:hover {
+		background-color: white;
+		color: white;
+		}
+		#diploimg{
+		padding-left:100px;
+		}
+		inputsearch{
+			background-color: black; margin-left: 10px; border-radius: 10px; padding: 10px; width: 20px;		
+		}
+		button a{
+			color: black; font-weight: bold; font-size: 15px;
+		
+		}
+		#ul2{
+			display:inline-block;
+			line-height: 300%; list-style: none;
+		}
+		#ul3{
+			display:inline-block;
+			line-height: 300%; list-style: none;
+		}
+		#ul4{
+			display:inline-block; clear:none;
+			line-height: 300%; list-style: none;
+		}
+		.manevra{
+		width:100%;
+		margin:0 auto;
+		display:inline-block;
+		text-align:center;
+		}
+		#bac_h1{
+		text-align:center;
+		font-size:25px;
+		}
+		#test{
+		margin: 0 auto;
+		max-width:350px;
+		font-size: 25px; font-weight: bold;
+		text-align:center;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar">
+		<div class="navdiv">
+			<div class="logo"><a href="main.html">VarianteBac.info</a> </div>
+			<a href="main.html"><img src="diplo.webp" id="diplo_img" alt="Variante Bac" width="100" height="100"></a>
+			<ul>
+				<li id="elem1"><a href="https://profs.info.uaic.ro/~vcosmin/pagini/resurse_pregatire/variante-bac-2009-informatica-intensiv.pdf" download="variante2009">Descărcare Variante 2009</a></li>
+				<li id="elem2"><a href="#"></a></li>
+				<li id="elem3"><a href="#">Contact</a></li>
+				<input type="number" id="inputsearch">
+				<button id="butonsend"><a href="#">Căutare</a></button>
+			</ul>
+		</div>
+	</nav>
+<h1 id="bac_h1">Bacalaureat Informatica M1 2009 - 100 Variante Rezolvate</h1>
+<div id="test">
+<a href="paginivariante/variante1la30.html" id="interval1"><h2>Variante 1-30</h2></a>
+<a href="paginivariante/variante1la60.html" id="interval2"><h2>Variante 31-60</h2></a>
+<a href="paginivariante/variante1la90.html" id="interval3"><h2>Variante 61-90</h2></a>
+</div>
+<script type="text/javascript">
+document.getElementById("butonsend").onclick = function(){
+	let x = document.getElementById("inputsearch").value;
+	if(x>100 || x<1)
+	console.log("number input >100//0");
+	else
+	location.href = "paginivariante/varianta"+document.getElementById("inputsearch").value+".html";
+	console.log(location.href);
+
+};
+</script>
+</body>
+</html>

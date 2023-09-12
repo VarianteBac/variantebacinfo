@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Variante Informatica</title>
+	<style type="text/css">
+		@font-face{
+		font-family: Montserrat; src: url("montserrat.ttf");
+		}
+		*{
+			text-decoration: none;
+			font-family: Montserrat;
+		}
+		
+		body{
+		background-color:white;
+		}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
+		.logo a{
+			font-size: 40px; font-weight: 600; color: black; text-align: center;
+		}
+		.logo{
+		text-align: center;
+		}
+		#elem2{
+			list-style: none; display: inline-block; color: white; font-size: 25px; font-weight: bold;
+		}
+		#elem1{
+			list-style: none; display: inline-block; color: white; font-size: 25px; font-weight: bold;
+		}
+		#elem3{
+			list-style: none; display: inline-block; color: white; font-size: 25px; font-weight: bold; border-left: 1px solid #ccc;
+		}
+		li a{
+		color: white; font-size: 25px; font-weight: bold;
+		}
+		button{
+			transition-duration: 0.2s;
+			background-color: grey; margin-left: 10px; border-radius: 12px; padding: 10px; width: 90px;
+			color:white;
+		
+		}
+		#butonsend{
+			text-decoration: none;
+			font-weight: bold;
+			color: black;
+		
+		}
+		button:hover {
+		background-color: white;
+		color: white;
+		}
+		@media screen and (max-width:460px){
+		
+		}
+		#diplo_img{
+		
+		}
+		#inputsearch{
+			background-color: white; margin-left: 10px; border-radius: 10px; padding: 10px; width: 30px;		
+		}
+		button a{
+			color: black; font-weight: bold; font-size: 15px;
+		
+		}
+		#ul2{
+			display:inline-block;
+			line-height: 300%; list-style: none;
+		}
+		#ul3{
+			display:inline-block;
+			line-height: 300%; list-style: none;
+		}
+		#ul4{
+			display:inline-block; clear:none;
+			line-height: 300%; list-style: none;
+		}
+		@media only screen and (max-width: 668px) {
+		.logo { 
+			margin-right: 10px; 
+			}
+		}
+		.manevra{
+		width:100%;
+		margin:0 auto;
+		display:inline-block;
+		text-align:center;
+		}
+		#bac_h1{
+		text-align:center;
+		font-size:25px;
+		}
+		#manevra2{
+		float: left;
+		border-right: 1px solid #ccc;
+		display: block;
+			padding: 8px 15px;
+			text-decoration: none;
+			font-weight: bold;
+			color: black;
+		}
+		#test{
+		margin: 0 auto;
+		max-width:350px;
+		font-size: 25px; font-weight: bold;
+		text-align:center;
+		}
+		#fmm{
+		list-style: none;
+		width: 800px;
+		margin: 0 auto;
+		padding: 0;}
+		}
+		#sugi li a{
+		display: block;
+		padding:8px 15px;
+		text-decoration: none;
+		font-weight: bold;
+		border-right: 1px solid #ccc;
+		}
+		#sugi li{
+		float: left:}
+		}
+		#nav {
+			width: 100%;
+			float: left;
+			margin: 0 0 1em 0;
+			padding: 0;
+			background-color: black;
+			border-bottom: 1px solid #ccc;  }
+		#nav ul {
+			list-style: none;
+			width: 800px;
+			margin: 0 auto;
+			padding: 0; }
+		#nav li {
+			float: left; }
+		#nav li a {
+			display: block;
+			padding: 8px 15px;
+			text-decoration: none;
+			font-weight: bold;
+			color: black;
+			border-right: 1px solid #ccc; }
+		#nav li:first-child a {
+			border-left: 1px solid #ccc; }
+		#nav li a:hover {
+			color: #c00;
+			background-color: #fff; }
+		.center{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100px;
+		}
+	</style>
+<link rel = "icon" href = "diplo.webp" type = "image/x-icon">
+</head>
+<body>
+			<div class="logo"><a href="../main.html">VarianteBac.info</a> </div>
+		<div id="nav">
+			<a href="../main.html" style = "display: block; width:100px; margin-left:auto; margin-right: auto;"><img src="diplo.webp" alt="Variante Bac" width="100" height="100" class="center"></a>
+			<ul id="fmm">
+				<li id="elem1"><a href="https://profs.info.uaic.ro/~vcosmin/pagini/resurse_pregatire/variante-bac-2009-informatica-intensiv.pdf" download="variante2009">Descărcare Variante 2009</a></li>
+				<li id="elem3"><a href="#">Contact</a></li>
+				<input type="number" id="inputsearch">
+				<button id="butonsend"><a href="#">Căutare</a></button>
+			</ul>
+		</div>
+<h1 id="bac_h1">Varianta 1</h1>
+<object data="variante/varianta36.pdf" type="application/pdf" width="100%" height="1200px">
+</object>
+<div id="test">
+</div>
+<script type="text/javascript">
+document.getElementById("butonsend").onclick = function(){
+	let x = document.getElementById("inputsearch").value;
+	if(x>100 || x<1)
+	console.log("number input >100//0");
+	else
+	location.href = "paginivariante/varianta"+document.getElementById("inputsearch").value+".html";
+	console.log(location.href);
+
+};
+</script>
+</body>
+</html>
